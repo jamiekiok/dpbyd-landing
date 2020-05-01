@@ -411,7 +411,9 @@ input:focus::-webkit-input-placeholder {
 
 header {
     padding: 104px 0;
-    background: url(../images/header.jpg) no-repeat 50% 50%;
+    background: rgb(255,205,134);
+    background: linear-gradient(90deg, rgba(255,205,134,1) 35%, rgba(187,244,255,1) 100%);
+    /*url(../images/header.jpg) no-repeat 50% 50%;*/
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
