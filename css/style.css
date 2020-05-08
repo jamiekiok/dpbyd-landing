@@ -74,6 +74,7 @@ del {
     border-bottom: solid 6px #f4f4f4;
     padding-bottom: 43px;
     margin-bottom: 43px;
+    margin-top: 43px;
 }
 .goals-partnership {
     margin: 0 auto !important;
@@ -81,6 +82,7 @@ del {
     max-width: 1140px;
 
 }
+
 
 .checklist-img {
     height: 486px !important;
