@@ -63,6 +63,33 @@ del {
     font-style: normal;
 }
 
+
+.logo-features {
+    height: 32px !important;
+    width: 32px !important; 
+}
+
+.goals-partnership h2 {
+    font: 700 48px/48px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: solid 6px #f4f4f4;
+    padding-bottom: 43px;
+    margin-bottom: 43px;
+}
+.goals-partnership {
+    margin: 0 auto !important;
+    padding: 0 15px;
+    max-width: 1140px;
+
+}
+
+
+
+
+
+
+    
+
+
 ul,
 ol {
     list-style: none
@@ -893,10 +920,6 @@ footer {
     margin: 0 -40px
 }
 
-.logo-features {
-    height: 32px !important;
-    width: 32px !important; 
-}
 
 /* sidebar --------------------------  */
 
