@@ -89,7 +89,7 @@ del {
     width: 634px !important;
 }
 
-#site-title {
+#site-title h1 {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
