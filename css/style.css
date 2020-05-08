@@ -893,6 +893,11 @@ footer {
     margin: 0 -40px
 }
 
+.logo-features {
+    height: 32px !important;
+    width: 32px !important; 
+}
+
 /* sidebar --------------------------  */
 
 /* media --------------------------  */
