@@ -89,11 +89,13 @@ del {
     width: 634px !important;
 }
 
-
-
-
-
-    
+#site-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+}
 
 
 ul,
