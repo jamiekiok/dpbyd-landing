@@ -285,8 +285,12 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+.header {
+    min-height: 100vh;
+}
+
 .main {
-    /* min-height: 100%; */
+    min-height: 100%;
     overflow: hidden;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
