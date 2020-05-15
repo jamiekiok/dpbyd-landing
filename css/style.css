@@ -1120,3 +1120,10 @@ footer {
   }
 }
 
+/* Custom css additional */
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+
+}
