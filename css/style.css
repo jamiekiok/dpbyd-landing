@@ -940,7 +940,7 @@ footer {
 #header-img {
     height: 354px !important;
     width: auto !important;
-
+    float: right;
 }
 
 /* sidebar --------------------------  */
