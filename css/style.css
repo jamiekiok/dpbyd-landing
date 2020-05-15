@@ -933,9 +933,10 @@ footer {
 }
 
 #checklist-img {
-    height:486px !important;
-    width:634px !important;
+    height:508px !important;
+    width:auto !important;
 }
+
 
 #header-img {
     height: 354px !important;
