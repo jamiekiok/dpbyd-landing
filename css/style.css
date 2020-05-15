@@ -220,6 +220,24 @@ img {
     height: auto;
 }
 
+/*
+ * Custom translucent site header
+ */
+
+ .site-header {
+    background-color: #e3e3e8 !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+  }
+  .site-header a {
+    color: #7597ed !important;
+    transition: ease-in-out color .15s !important;
+  }
+  .site-header a:hover {
+    color: rgb(102, 116, 239);
+    text-decoration: none;
+  }
+
 /* tools --------------------------  */
 
 .clear {
