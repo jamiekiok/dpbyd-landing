@@ -230,11 +230,11 @@ img {
     backdrop-filter: saturate(180%) blur(20px) !important;
   }
   .site-header a {
-    color: rgb(62, 54, 113) !important;
+    color: #7597ed !important;
     transition: ease-in-out color .15s !important;
   }
   .site-header a:hover {
-    color: rgb(102, 186, 239);
+    color: rgb(62, 71, 147);
     text-decoration: none;
   }
 
