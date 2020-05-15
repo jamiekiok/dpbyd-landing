@@ -937,9 +937,9 @@ footer {
     width:634px !important;
 }
 
-.header-img {
-    height: 532px !important;
-    width: 252px !important;
+#header-img {
+    height: 354px !important;
+    width: auto !important;
 
 }
 
