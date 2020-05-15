@@ -84,10 +84,6 @@ del {
 }
 
 
-.discover-img {
-    height: 486px !important;
-    width: 634px !important;
-}
 
 #site-title h1 {
     font-family: Playfair Display;
@@ -936,6 +932,16 @@ footer {
     margin: 0 -40px
 }
 
+#checklist-img {
+    height:486px !important;
+    width:634px !important;
+}
+
+.header-img {
+    height: 532px !important;
+    width: 252px !important;
+
+}
 
 /* sidebar --------------------------  */
 
