@@ -1,31 +1,18 @@
-$wrap: 1140px;
+// Variables
 
-$fontSize: 16px;
-$lineHeight: 28px;
-$fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$fontCaption: 'Raleway', $fontFamily;
+// Gray and Brand Colors for use across theme
 
-$primary: #000000;
-$secondary: #000000;
-$text: #222222;
+$theme-primary:    #fdcc52;
+$theme-secondary:  #7b4397;
+$theme-tertiary:   #dc2430;
 
-$link: #10bbf1;
-$linkHover: lighten($link, 10%);
-$linkActive: darken($link, 10%);
+$gray-base:        #000;
+$gray-darker:      lighten($gray-base, 13.5%); // #222
+$gray-dark:        lighten($gray-base, 20%);   // #333
+$gray:             lighten($gray-base, 33.5%); // #555
+$gray-light:       lighten($gray-base, 46.7%); // #777
+$gray-lighter:     lighten($gray-base, 93.5%); // #eee
 
-$white: #ffffff;
-$black: #000000;
-$gray: #999999;
-$green: #00cc00;
-$red: #ff0000;
-$darkblue: #324a57;
-
-$f-thin: 100;
-$f-extra-light: 200;
-$f-light: 300;
-$f-normal: 400;
-$f-medium: 500;
-$f-demi-bold: 600;
-$f-bold: 700;
-$f-heavy: 800;
-$f-black: 900;
+$brand-twitter:		#1da1f2;
+$brand-facebook:	#3b5998;
+$brand-google-plus:	#dd4b39;

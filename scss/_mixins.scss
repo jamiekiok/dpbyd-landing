@@ -1,82 +1,79 @@
-@mixin font($fontsize, $lineheight, $fontsizeDefault: 16) {
-    font-size: ($fontsize*100%/$fontsizeDefault);
-    line-height: ($lineheight/$fontsize);
+// Mixins
+@mixin transition-all() {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
 }
-@mixin sizing($boxsizing: border-box) {
-    -moz-box-sizing: $boxsizing;
-    -webkit-box-sizing: $boxsizing;
-    box-sizing: $boxsizing;
+
+@mixin background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-@mixin size($width: auto, $height: auto) {
-    width: $width;
-    height: $height;
+
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    border-color: $border;
+    background-color: $background;
+    &:focus,
+    &.focus {
+        color: $color;
+        border-color: darken($border, 25%);
+        background-color: darken($background, 10%);
+    }
+    &:hover {
+        color: $color;
+        border-color: darken($border, 12%);
+        background-color: darken($background, 10%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $color;
+        border-color: darken($border, 12%);
+        background-color: darken($background, 10%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $color;
+            border-color: darken($border, 25%);
+            background-color: darken($background, 17%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            border-color: $border;
+            background-color: $background;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
 }
-@mixin border-radius($radius: 5px) {
-    -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    border-radius: $radius;
+
+@mixin heading-font {
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
 }
-@mixin box-shadow($shadow) {
-    -moz-box-shadow: $shadow;
-    -webkit-box-shadow: $shadow;
-    box-shadow: $shadow;
+
+@mixin body-font {
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
-@mixin gradient($gradient-from, $gradient-to) {
-    background-color: $gradient-from;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($gradient-from), to($gradient-to));
-    background-image: -webkit-linear-gradient(top, $gradient-from, $gradient-to);
-    background-image: -moz-linear-gradient(top, $gradient-from, $gradient-to);
-    background-image: -ms-linear-gradient(top, $gradient-from, $gradient-to);
-    background-image: -o-linear-gradient(top, $gradient-from, $gradient-to);
-    background-image: linear-gradient(to bottom, $gradient-from, $gradient-to);
-}
-@mixin transition($string) {
-    -moz-transition: $string;
-    -ms-transition: $string;
-    -o-transition: $string;
-    -webkit-transition: $string;
-    transition: $string;
-}
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
-}
-@mixin bgsize($string: cover) {
-    -moz-background-size: $string;
-    -webkit-background-size: $string;
-    -o-background-size: $string;
-    background-size: $string;
-}
-@mixin rotate($deg) {
-    -moz-transform: rotate($deg);
-    -ms-transform: rotate($deg);
-    -o-transform: rotate($deg);
-    -webkit-transform: rotate($deg);
-    transform: rotate($deg);
-}
-@mixin hyphens($mode: auto) {
-    word-wrap: break-word;
-    -webkit-hyphens: $mode;
-    -moz-hyphens: $mode;
-    -ms-hyphens: $mode;
-    -o-hyphens: $mode;
-    hyphens: $mode;
-}
-@mixin user-select($val) {
-    -webkit-touch-callout: $val;
-    -webkit-user-select: $val;
-    -khtml-user-select: $val;
-    -moz-user-select: $val;
-    -ms-user-select: $val;
-    user-select: $val;
-}
-@mixin stretchy($width) {
-    width: $width/$wrap*100%;
-}
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
+
+@mixin alt-font {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }

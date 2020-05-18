@@ -1,0 +1,90 @@
+// Global styling for this template
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    @include body-font;
+}
+
+a {
+    color: $theme-primary;
+    @include transition-all;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: fade-out($gray-darker, .9);
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading-font;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 100px 0;
+    h2 {
+        font-size: 50px;
+    }
+}
+
+
+
+header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    /* background: url("../img/bg-pattern.png"), #7b4397;
+    background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430); */
+    background: url("../img/yellowbackground.png");
+  }
+
+
+  /* Team styling */
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  #team-header {
+    padding-bottom:1em;
+  }

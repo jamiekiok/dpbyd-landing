@@ -1,10 +1,26 @@
-/* footer -------------------------- */
+// Styling for the footer
 footer {
-	background: $darkblue;
-    color: $white;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 90px 0;
+    padding: 25px 0;
     text-align: center;
-    @include sizing;
+    color: fade-out(white, .7);
+    background-color: $gray-darker;
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+    ul {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 12px;
+                color: fade-out(white, .7);
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
